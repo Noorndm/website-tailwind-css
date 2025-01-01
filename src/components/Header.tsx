@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

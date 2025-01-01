@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 const Properties = () => {
   const propertyDetail = [
@@ -19,7 +20,7 @@ const Properties = () => {
       <div className="grid grid-col-1 sm:grid-cols-3 gap-10 px-2 sm:px-8 my-10">
         {propertyDetail.map((property) =>
         <div key={property.id} className='bg-white shadow-xl text-center p-5 rounded-xl'>
-          <img src={property.image} alt={property.name} className='w-full rounded-lg transition-transform duration-300 transform hover:scale-110'/>
+          <Image src={property.image} alt={property.name} className='w-full rounded-lg transition-transform duration-300 transform hover:scale-110'/>
           <h3 className="pt-4 text-xl font-bold">{property.name}</h3>
           <p className="text-[#808080] text-[16px] py-2">{property.description}</p>
           <div className="text-[#ff6a00] text-[24px] font-semibold">${property.price}</div>
